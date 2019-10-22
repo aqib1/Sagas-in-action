@@ -1,0 +1,8 @@
+/.metadata/
+sagas-in-action/.gitignore
+sagas-in-action/mvnw
+sagas-in-action/mvnw.cmd
+sagas-in-action/.mvn/
+Servers/.project
+Servers/.settings/
+Servers/
