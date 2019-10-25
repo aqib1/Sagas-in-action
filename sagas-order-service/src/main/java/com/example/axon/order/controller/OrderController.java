@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.axon.order.dto.OrderCreateDto;
 import com.example.axon.order.service.OrderService;
 
 @RestController
@@ -20,7 +21,7 @@ public class OrderController {
 	    }
 
 	@PostMapping
-	public CompletableFuture<String> createOrder(@RequestBody OrderCreateDTO orderCreateDTO) {
-		return orderService.createOrder(orderCreateDTO);
+	public CompletableFuture<String> createOrder(@RequestBody OrderCreateDto orderCreateDTO) {
+		return orderService.creatOrder(orderCreateDTO);
 	}
 }
